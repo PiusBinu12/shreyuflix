@@ -61,7 +61,7 @@ const App = () => {
     {
       title: "Ep 5: Gopalan security😘",
       image: `${process.env.PUBLIC_URL}/images/episodes/gobalan.jpg`,
-      description: "All those complains but i secured the deal",
+      description: "All those complaints but i secured the deal",
     },
     {
       title: "Ep 6: Third date?",
