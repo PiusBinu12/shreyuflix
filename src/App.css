@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+/* Global reset & base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: #000;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.nav-links span {
+  margin: 0 1rem;
+  cursor: pointer;
+  color: #ccc;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links span:hover {
+  color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
   color: white;
+  position: relative;
+
+  /* 👇 Add this line */
+  padding-top: 15vh; /* try 10–20vh */
 }
 
-.App-link {
-  color: #61dafb;
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+/* Carousel Sections */
+.carousel {
+  padding: 2rem 1rem;
+}
+
+.carousel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  color: #fff;
+}
+
+/* Row of cards */
+.carousel-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 0 1rem;
+  scroll-behavior: smooth;
+}
+
+.carousel-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* ========================= */
+/* === SHOW Cards (Default) */
+/* ========================= */
+
+.card {
+  min-width: 180px;
+  max-width: 180px;
+  height: 270px;
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  z-index: 2;
+}
+
+/* ========================== */
+/* === EPISODE Cards (Soft) */
+/* ========================== */
+
+.card.episode {
+  min-width: 280px;
+  max-width: 280px;
+  height: 160px;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.episode img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+.card.episode:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Overlay for episode card */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background 0.3s ease;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.card.episode:hover .card-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  color: #888;
+  font-size: 0.9rem;
+  background-color: #111;
+  margin-top: 2rem;
+}
+
+.card.episode.shift-up img {
+  margin-top: -30px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.modal h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.modal p {
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
 }
