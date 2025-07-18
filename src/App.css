@@ -257,3 +257,14 @@ body {
 .card:hover .card-overlay {
   opacity: 1;
 }
+
+.logo {
+  color: #e50914; /* Netflix red */
+  font-family: 'Bebas Neue', 'Arial Black', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  cursor: default;
+}
+

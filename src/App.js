@@ -56,7 +56,7 @@ const App = () => {
     {
       title: "Ep 4: Siblings or dating ah💀",
       image: `${process.env.PUBLIC_URL}/images/episodes/sod.jpg`,
-      description: "Sweet Home Alabama!",
+      description: "Same nose",
     },
     {
       title: "Ep 5: Gopalan security😘",
@@ -65,7 +65,8 @@ const App = () => {
     },
     {
       title: "Ep 6: Third date?",
-      image: `${process.env.PUBLIC_URL}/images/episodes/allmegng.jpg`
+      image: `${process.env.PUBLIC_URL}/images/episodes/allmegng.jpg`,
+      description: "I asked YOU out FIRST dont beleive anyone else!",
     },
     {
       title: "Ep 7: Passed tf out",
@@ -106,7 +107,7 @@ const App = () => {
     <div className="app">
       {/* Navbar */}
       <header className="navbar">
-        <h2 className="logo">SHREYUFLIX</h2>
+        <h2 className="logo">SHREYFLIX</h2>
         <nav className="nav-links">
           <span>Home</span>
           <span>Series</span>
@@ -145,25 +146,25 @@ const App = () => {
 
           <div className="card">
             <img
-              src={`${process.env.PUBLIC_URL}/images/shows/okjaanu.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/shows/jaanu.jpg`}
               alt="Ok Jaanu"
             />
           </div>
           <div className="card">
             <img
-              src={`${process.env.PUBLIC_URL}/images/shows/tsitp.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/shows/tsurr.jpg`}
               alt="The Summer I Turned Pretty"
             />
           </div>
           <div className="card">
             <img
-              src={`${process.env.PUBLIC_URL}/images/shows/friends.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/shows/frr.jpg`}
               alt="Friends"
             />
           </div>
           <div className="card">
             <img
-              src={`${process.env.PUBLIC_URL}/images/shows/theoffice.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/shows/theoff.jpg`}
               alt="The Office"
             />
           </div>
@@ -175,13 +176,13 @@ const App = () => {
           </div>
           <div className="card">
             <img
-              src={`${process.env.PUBLIC_URL}/images/shows/notebook.jpg`}
-              alt="The Notebook"
+              src={`${process.env.PUBLIC_URL}/images/shows/kan.jpg`}
+              alt="O Kadhal Kanmani"
             />
           </div>
           <div className="card">
             <img
-              src={`${process.env.PUBLIC_URL}/images/shows/bbt.jpg`}
+              src={`${process.env.PUBLIC_URL}/images/shows/bang.jpg`}
               alt="Big Bang Theory"
             />
           </div>
