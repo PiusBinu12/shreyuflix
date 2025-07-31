@@ -291,33 +291,35 @@ const App = () => {
         <div className="love-note">
           <p>
             My bad — this is very last minute (timestamp: 11:45 PM) 'cause I got this idea just 30 minutes ago.
-            Just a little extra.. but then again, it’s never extra with you.
-            This one’s just for you. Gangy, I’d rather you not post this lol.
+            Just a little extra.. but then again, it’s never extra with you kvjbhdfv.
+            This one’s just for you gangyso I’d rather you not post this lol.
             I would’ve done this a long time ago if I could,
             but I knew you’d hate it and probably me too
-            if it wasn’t special enough.
+            if it wasn’t special enough😭.
             We’re not stargazing or even with each other right now,
             but I hope this is special enough.
 
-            I love you, Shreya.
-            And I’ve actually loved you for a long time now hehe.
+            I loveee you, Shreya.
+            And I’ve loved you for a long time now actually hehe. Cwazyy(You prolly knew lol but still).
             Didn’t wanna make it about me,
             so I held it back on your birthday.
-
-            Aghhhh it’s literally 12 now. Koi na. Pochu machhi.
-            I’m a lil slow right now.
-            It’d be really cool (and mature lol) if you took your sweet time.
+            I'd obviously be on cloud nine if you felt the same way or atleast similar way but you know 
+            It’d be really cool (and mature lol) if you took your sweet time. 
 
             I won’t say it again unless you feel the same.
-            So I’ll say it once more.
+            But I’ll say it once more.
 
-            I love you, Shreyuh.
+            I love you. Louu type shi 33
+            I have said it once when I was drunk you knoww. Crazy I felt so bad and deleted it later then. I'm sorry 
+            this isn't on text but it is just text at the end of the day lol. This way you can take your time thinking
+            also. If I threw it in your face tomorrow I'm afraid you might make some weird faces at me. 
 
             Also you can open the site from time to time.
             I’ma keep adding more fat lines of code,
             trying to make the site more you and more me.
 
             Signing out, gangy ji.
+            Byebyee
             Ummaa.
           </p>
         </div>
