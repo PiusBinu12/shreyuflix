@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ShreyuflixIntro from "./components/ShreyuflixIntro";
 import "./App.css";
 
 const App = () => {
@@ -103,6 +104,23 @@ const App = () => {
   ];
 
 
+
+
+  const [showIntro, setShowIntro] = useState(true);
+  useEffect(() => {
+    const fallbackTimer = setTimeout(() => {
+      setShowIntro(false);
+    }, 5000); // fallback after 5s
+
+    return () => clearTimeout(fallbackTimer);
+  }, []);
+
+  if (showIntro) {
+    return <ShreyuflixIntro onFinish={() => setShowIntro(false)} />;
+  }
+
+
+
   return (
     <div className="app">
       {/* Navbar */}
@@ -134,14 +152,14 @@ const App = () => {
       <section className="carousel">
         <h2>Top Picks for Shreya</h2>
         <div className="carousel-row">
-         <div className="card">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/shows/bobsmiling.jpg`}
-            alt="Pius x Shreya"
-          />
-          <div className="card-overlay">
-            <p>Pius x Shreya</p>
-          </div>
+          <div className="card">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/shows/bobsmiling.jpg`}
+              alt="Pius x Shreya"
+            />
+            <div className="card-overlay">
+              <p>Pius x Shreya</p>
+            </div>
           </div>
 
           <div className="card">
@@ -268,6 +286,42 @@ const App = () => {
         </div>
       </section>
 
+      <section className="gf-day">
+        <h2>Happy Girlfriend’s Day 💐</h2>
+        <div className="love-note">
+          <p>
+            My bad — this is very last minute (timestamp: 11:45 PM) 'cause I got this idea just 30 minutes ago.
+            Just a little extra.. but then again, it’s never extra with you.
+            This one’s just for you. Gangy, I’d rather you not post this lol.
+            I would’ve done this a long time ago if I could,
+            but I knew you’d hate it and probably me too
+            if it wasn’t special enough.
+            We’re not stargazing or even with each other right now,
+            but I hope this is special enough.
+
+            I love you, Shreya.
+            And I’ve actually loved you for a long time now hehe.
+            Didn’t wanna make it about me,
+            so I held it back on your birthday.
+
+            Aghhhh it’s literally 12 now. Koi na. Pochu machhi.
+            I’m a lil slow right now.
+            It’d be really cool (and mature lol) if you took your sweet time.
+
+            I won’t say it again unless you feel the same.
+            So I’ll say it once more.
+
+            I love you, Shreyuh.
+
+            Also you can open the site from time to time.
+            I’ma keep adding more fat lines of code,
+            trying to make the site more you and more me.
+
+            Signing out, gangy ji.
+            Ummaa.
+          </p>
+        </div>
+      </section>
 
       {/* Modal */}
       {selectedEpisode && (
