@@ -307,12 +307,16 @@ const App = () => {
             It’d be really cool (and mature lol) if you took your sweet time. 
 
             I won’t say it again unless you feel the same.
-            But I’ll say it once more.
+            But I’ll say it two more times.
 
             I love you. Louu type shi 33
             I have said it once when I was drunk you knoww. Crazy I felt so bad and deleted it later then. I'm sorry 
             this isn't on text but it is just text at the end of the day lol. This way you can take your time thinking
-            also. If I threw it in your face tomorrow I'm afraid you might make some weird faces at me. 
+            also. If I threw it in your face tomorrow I'm afraid you might make some weird faces at me. jkjk lol
+
+            You are the best gf any guy could ever ask for. SO smart so pretty so Wowoww, just keep being you and I'll 
+            love you for as long as you let me yuhh. Sounds a lil tsitp but it's all me gng trust.
+            Aight its 1am i shall sleep now cutie.
 
             Also you can open the site from time to time.
             I’ma keep adding more fat lines of code,
